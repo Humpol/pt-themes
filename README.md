@@ -25,5 +25,5 @@ To Install Run the following command in the Panel Directory!
 
 cd /var/www/html/pterodactyl/
 
-curl https://raw.githubusercontent.com/Humpol/pt-themes/blob/main/installer/pure-ui/build.sh | sh
+curl https://github.com/Humpol/pt-themes/blob/main/installer/pure-ui/build.sh | sh
 
