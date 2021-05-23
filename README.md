@@ -19,7 +19,9 @@ I'm sure there is something you would love to see changed, head over to the issu
 Themes Ready for you to use:
 Pure-UI (Panel 0.7.18)
 
+
 To Install Run the following command in the Panel Directory!
+
 
 cd /var/www/html/pterodactyl/
 
