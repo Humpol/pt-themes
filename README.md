@@ -23,6 +23,9 @@ White and Purple
 ![](https://i.ibb.co/yYk3h51/image.png)
 To Install Run the following command in the Panel Directory!
 ```
+cd /var/www/html/pterodactyl/
+```
+```
 curl https://raw.githubusercontent.com/Hurmpol/Pterodactyl-Themes/master/MasterThemes/PinkAnFluffy/build.sh | sh
 ```
 
