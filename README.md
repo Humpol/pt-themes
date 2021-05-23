@@ -26,7 +26,7 @@ To Install Run the following command in the Panel Directory!
 cd /var/www/html/pterodactyl/
 ```
 ```
-curl https://raw.githubusercontent.com/Hurmpol/Pterodactyl-Themes/master/MasterThemes/PinkAnFluffy/build.sh | sh
+curl https://raw.githubusercontent.com/Humpol/pt-themes/main/MasterThemes/pure-ui/build.sh | sh
 ```
 
 ### Tango Twist (Panel 0.7.18)
