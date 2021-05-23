@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## All Themes have been verified to work on version (0.7.18) of Pterodactyl
 ![](https://github.com/TheFonix/Pterodactyl-Themes/blob/master/pteroBanner.png?)
 =======
