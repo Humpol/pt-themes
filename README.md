@@ -18,12 +18,12 @@ I'm sure there is something you would love to see changed, head over to the issu
 
 ## Themes Ready for you to use:
 
-### Pink'An'Fluffy (Panel 0.7.18)
-Super Pink and Fluffy
-![](https://github.com/TheFonix/Pterodactyl-Themes/blob/master/MasterThemes/PinkAnFluffy/ss/PinkAnFluffy.png?)
+### Pure-UI (Panel 0.7.18)
+White and Purple
+![](https://i.ibb.co/yYk3h51/image.png)
 To Install Run the following command in the Panel Directory!
 ```
-curl https://raw.githubusercontent.com/TheFonix/Pterodactyl-Themes/master/MasterThemes/PinkAnFluffy/build.sh | sh
+curl https://raw.githubusercontent.com/Hurmpol/Pterodactyl-Themes/master/MasterThemes/PinkAnFluffy/build.sh | sh
 ```
 
 ### Tango Twist (Panel 0.7.18)
