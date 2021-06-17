@@ -35,6 +35,11 @@ if [ ! -f "artisan" ]; then
     echo "Removing the temp folders created in the copy process"
 
     cd .. && rm -rf tempdown
+    
+    echo "Cleaning cache"
+
+    php artisan view:clear
+    php artisan cache:clear
 
     echo "Complete! Have a good day and dont forget to refresh your browser cache! (CTRL + F5)"
     echo "-Will"
