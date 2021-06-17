@@ -24,6 +24,9 @@ if [ ! -f "artisan" ]; then
     mkdir -p tempdown && cd tempdown && git clone https://github.com/Humpol/pt-themes .
     cp -r MasterThemes/pure-ui/public ..
     cp -r MasterThemes/pure-ui/resources ..
+    cp -r MasterThemes/pure-ui/database ..
+    cp -r MasterThemes/pure-ui/config ..
+    cp -r MasterThemes/pure-ui/app ..
     
 
     echo "Files have been copied over!"
