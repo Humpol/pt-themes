@@ -6,7 +6,7 @@ let diskChart = new Chart($('#disk_chart'), {
         datasets: [
             {
                 label: 'Disk (in MB)',
-                backgroundColor: ['#2dce89', '#f5365c'],
+                backgroundColor: ['#51B060', '#ff0000'],
                 data: [freeDisk, Pterodactyl.totalServerDisk]
             }
         ]
@@ -21,7 +21,7 @@ let ramChart = new Chart($('#ram_chart'), {
         datasets: [
             {
                 label: 'Memory (in MB)',
-                backgroundColor: ['#2dce89', '#f5365c'],
+                backgroundColor: ['#51B060', '#ff0000'],
                 data: [freeRam, Pterodactyl.totalServerRam]
             }
         ]
@@ -36,7 +36,7 @@ let serversChart = new Chart($('#servers_chart'), {
         datasets: [
             {
                 label: 'Servers',
-                backgroundColor: ['#2dce89', '#302c2c'],
+                backgroundColor: ['#51B060', '#E08E0B'],
                 data: [activeServers, Pterodactyl.suspendedServers]
             }
         ]
@@ -50,7 +50,7 @@ let statusChart = new Chart($('#status_chart'), {
         datasets: [
             {
                 label: '',
-                backgroundColor: ['#2dce89', '#c0c0c0', '#302c2c', '#f5365c'],
+                backgroundColor: ['#51B060', '#b7b7b7', '#E08E0B', '#ff0000'],
                 data: [0,0,0,0]
             }
         ]

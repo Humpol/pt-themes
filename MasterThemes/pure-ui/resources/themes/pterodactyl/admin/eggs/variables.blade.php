@@ -153,7 +153,7 @@
     <script>
         $('.pOptions').select2();
         $('[data-action="delete"]').on('mouseenter', function (event) {
-            $(this).find('i').html('&nbsp;&nbsp;<font face="Open Sans">Delete Variable</font>');
+            $(this).find('i').html(' Delete Variable');
         }).on('mouseleave', function (event) {
             $(this).find('i').html('');
         });

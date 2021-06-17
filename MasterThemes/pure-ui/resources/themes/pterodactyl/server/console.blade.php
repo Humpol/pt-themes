@@ -16,12 +16,12 @@
         <div id="terminal" style="width:100%;max-height: none !important;"></div>
         <div id="terminal_input" class="form-group no-margin">
             <div class="input-group">
-                <div class="input-group-addon terminal_input--prompt">Command:</div>
+                <div class="input-group-addon terminal_input--prompt">container:~/$</div>
                 <input type="text" class="form-control terminal_input--input">
             </div>
         </div>
         <div id="terminalNotify" class="terminal-notify hidden">
-            <i class="fa fa-arrow-down"></i>
+            <i class="fa fa-bell"></i>
         </div>
     </body>
     <script>window.SkipConsoleCharts = true</script>

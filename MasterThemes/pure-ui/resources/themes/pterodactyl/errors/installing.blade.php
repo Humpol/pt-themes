@@ -23,7 +23,7 @@
                 <p class="text-muted">@lang('base.errors.installing.desc')</p>
             </div>
             <div class="box-footer with-border">
-                <a href="{{ URL::previous() }}"><button class="btn btn-primary">&larr; @lang('base.errors.return')</button></a>
+                <a href="{{ URL::previous() }}"><button class="btn btn-info">&larr; @lang('base.errors.return')</button></a>
                 <a href="/"><button class="btn btn-default">@lang('base.errors.home')</button></a>
             </div>
         </div>

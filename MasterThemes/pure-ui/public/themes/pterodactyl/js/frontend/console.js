@@ -255,6 +255,31 @@ $(document).ready(function () {
 
             TimeLabels.push($.format.date(new Date(), 'HH:mm:ss'));
 
+
+            // memory.cmax is the maximum given by the container
+            // memory.amax is given by the json config
+            // use the maximum of both
+            // with no limit memory.cmax will always be higher
+            // but with limit memory.amax is sometimes still smaller than memory.total
+            MemoryChart.config.options.scales.yAxes[0].ticks.max = Math.max(proc.data.memory.cmax, proc.data.memory.amax) / (1000 * 1000);
+
+            if (Pterodactyl.server.cpu > 0) {
+                // if there is a cpu limit defined use 100% as maximum
+                CPUChart.config.options.scales.yAxes[0].ticks.max = 100;
+            } else {
+                // if there is no cpu limit defined use linux percentage
+                // and find maximum in all values
+                var maxCpu = 1;
+                for(var i = 0; i < CPUData.length; i++) {
+                    maxCpu = Math.max(maxCpu, parseFloat(CPUData[i]))
+                }
+
+                maxCpu = Math.ceil(maxCpu / 100) * 100;
+                CPUChart.config.options.scales.yAxes[0].ticks.max = maxCpu;
+            }
+
+
+
             CPUChart.update();
             MemoryChart.update();
         });
@@ -269,23 +294,22 @@ $(document).ready(function () {
                 datasets: [
                     {
                         label: "Percent Use",
-                        fill: true,
-                        lineTension: 0.3,
-                        borderWidth: 1.5,
-                        backgroundColor: "rgba(130, 94, 228, 0.5)",
-                        borderColor: "rgba(94, 114, 228, 0.9)",
+                        fill: false,
+                        lineTension: 0.03,
+                        backgroundColor: "#3c8dbc",
+                        borderColor: "#3c8dbc",
                         borderCapStyle: 'butt',
                         borderDash: [],
                         borderDashOffset: 0.0,
                         borderJoinStyle: 'miter',
-                        pointBorderColor: "#5e72e4",
+                        pointBorderColor: "#3c8dbc",
                         pointBackgroundColor: "#fff",
                         pointBorderWidth: 1,
                         pointHoverRadius: 5,
-                        pointHoverBackgroundColor: "#5e72e4",
+                        pointHoverBackgroundColor: "#3c8dbc",
                         pointHoverBorderColor: "rgba(220,220,220,1)",
                         pointHoverBorderWidth: 2,
-                        pointRadius: 3,
+                        pointRadius: 1,
                         pointHitRadius: 10,
                         data: CPUData,
                         spanGaps: false,
@@ -301,7 +325,14 @@ $(document).ready(function () {
                     display: false,
                 },
                 animation: {
-                    duration: 10,
+                    duration: 1,
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
                 }
             }
         });
@@ -315,23 +346,22 @@ $(document).ready(function () {
                 datasets: [
                     {
                         label: "Memory Use",
-                        fill: true,
-                        lineTension: 0.3,
-                        borderWidth: 1.5,
-                        backgroundColor: "rgba(130, 94, 228, 0.5)",
-                        borderColor: "rgba(94, 114, 228, 0.9)",
+                        fill: false,
+                        lineTension: 0.03,
+                        backgroundColor: "#3c8dbc",
+                        borderColor: "#3c8dbc",
                         borderCapStyle: 'butt',
                         borderDash: [],
                         borderDashOffset: 0.0,
                         borderJoinStyle: 'miter',
-                        pointBorderColor: "#5e72e4",
+                        pointBorderColor: "#3c8dbc",
                         pointBackgroundColor: "#fff",
                         pointBorderWidth: 1,
                         pointHoverRadius: 5,
-                        pointHoverBackgroundColor: "#5e72e4",
-                        pointHoverBorderColor: "rgba(94, 114, 228, 1)",
+                        pointHoverBackgroundColor: "#3c8dbc",
+                        pointHoverBorderColor: "rgba(220,220,220,1)",
                         pointHoverBorderWidth: 2,
-                        pointRadius: 3,
+                        pointRadius: 1,
                         pointHitRadius: 10,
                         data: MemoryData,
                         spanGaps: false,
@@ -347,7 +377,14 @@ $(document).ready(function () {
                     display: false,
                 },
                 animation: {
-                    duration: 10,
+                    duration: 1,
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
                 }
             }
         });

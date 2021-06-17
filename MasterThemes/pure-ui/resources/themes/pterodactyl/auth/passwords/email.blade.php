@@ -10,71 +10,52 @@
 @endsection
 
 @section('content')
-
-	<div class="limiter">
-		<div class="container-login100">
-				<div class="row">
-					<div class="col-sm-offset-11 col-xs-offset-9 col-sm-14 col-xs-18 mx-auto">
-                    @if (count($errors) > 0)
-                        <div class="alert alert-danger">
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            @lang('auth.auth_error')<br><br>
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
+<div class="row">
+    <div class="col-sm-offset-3 col-xs-offset-1 col-sm-6 col-xs-10">
+        @if (count($errors) > 0)
+            <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                @lang('auth.auth_error')<br><br>
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+        @if (session('status'))
+            <div class="alert alert-success">
+                @lang('auth.email_sent')
+            </div>
+        @endif
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-offset-3 col-xs-offset-1 col-sm-6 col-xs-10 pterodactyl-login-box">
+        <form id="resetForm" action="{{ route('auth.password') }}" method="POST">
+            <div class="form-group has-feedback">
+                <div class="pterodactyl-login-input">
+                    <input type="email" name="email" class="form-control input-lg" value="{{ old('email') }}" required placeholder="@lang('strings.email')" autofocus>
+                    <span class="fa fa-envelope form-control-feedback fa-lg"></span>
+                    @if ($errors->has('email'))
+                        <span class="help-block text-red small">
+                            {{ $errors->first('email') }}
+                        </span>
                     @endif
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            @lang('auth.email_sent')
-                        </div>
-                    @endif
-					</div>
-				</div>
-			<div class="wrap-login100">
-				<div class="login100-pic js-tilt" data-tilt>
-                    <a href="{{ route('auth.login') }}" style="cursor: default;"><img src="/logo.png" alt="IMG"></a>
-				</div>
-
-				<form class="login100-form validate-form" id="resetForm" action="{{ route('auth.password') }}" method="post">
-					<span class="login100-form-title">@lang('auth.request_reset')</span>
-
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input type="email" name="email" class="form-control input-lg input100" value="{{ old('email') }}" required placeholder="@lang('strings.email')" autofocus>
-                            @if ($errors->has('email'))
-                                <span class="help-block text-red small">
-                                    {{ $errors->first('email') }}
-                                </span>
-                            @endif
-                        <span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</span>
-					</div>
-
-					
-					<div class="container-login100-form-btn">
-						{!! csrf_field() !!}
-						<button type="submit" class="btn btn-primary btn-block g-recaptcha pterodactyl-login-button--main login100-form-btn" @if(config('recaptcha.enabled')) data-sitekey="{{ config('recaptcha.website_key') }}" data-callback='onSubmit' @endif>@lang('auth.request_reset')</button>
-					</div>
-
-					<div class="text-center p-t-90">
-						<a class="txt2" href="#">
-							<p class="small login-copyright text-center">Copyright &copy; 2015 - {{ date('Y') }} <a href="https://pterodactyl.io/">Pterodactyl Software</a></p>
-						</a>
-					</div>
-					<div class="text-center p-t-5">
-						<a class="txt2" href="#">
-            				<strong><i class="fa fa-fw {{ $appIsGit ? 'fa-git-square' : 'fa-code-fork' }}"></i></strong> {{ $appVersion }}
-							<strong><i class="fa fa-fw fa-clock-o"></i></strong> {{ round(microtime(true) - LARAVEL_START, 3) }}s
-						</a>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <a href="{{ route('auth.login') }}"><button type="button" class="btn pterodactyl-login-button--left"><i class="fa fa-user-circle"></i></button></a>
+                </div>
+                <div class="col-xs-offset-4 col-xs-4">
+                    {!! csrf_field() !!}
+                    <button type="submit" class="btn btn-block g-recaptcha pterodactyl-login-button--main" @if(config('recaptcha.enabled')) data-sitekey="{{ config('recaptcha.website_key') }}" data-callback='onSubmit' @endif>@lang('auth.request_reset')</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 @endsection
 
 @section('scripts')

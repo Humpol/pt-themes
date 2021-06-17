@@ -1,5 +1,3 @@
-<?php require('../../pterodactyl/public/themes/pure-ui/custom_config.php'); ?> 
-
 {{-- Pterodactyl - Panel --}}
 {{-- Copyright (c) 2015 - 2017 Dane Everitt <dane@daneeveritt.com> --}}
 
@@ -21,7 +19,7 @@
         <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#bc6e3c">
         <link rel="shortcut icon" href="/favicons/favicon.ico">
         <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-        <meta name="theme-color" content="#232323">
+        <meta name="theme-color" content="#0e4688">
 
         @include('layouts.scripts')
 
@@ -34,7 +32,6 @@
             {!! Theme::css('css/pterodactyl.css?t={cache-version}') !!}
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-            {!! Theme::css('css/pure-ui.php?t={cache-version}') !!}
 
             <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -46,14 +43,8 @@
         <div class="wrapper">
             <header class="main-header">
                 <a href="{{ route('index') }}" class="logo">
-                    <?php
-                        if(filter_var($logo, FILTER_VALIDATE_URL)) {
-                            $choose = '<span class="logo-mini" style="display: block;"><img src="'.$logo.'"></span>';
-                        } else {
-                            $choose = "<span class='logo-lg'>$logo</span>";
-                        }
-                    ?>
-                    <?php echo $choose ?>
+                    <span class="logo-lg">{{ config('app.name', 'Pterodactyl') }}</span>
+                    <span class="logo-mini"><img src="/favicons/android-chrome-192x192.png"></span>
                 </a>
                 <nav class="navbar navbar-static-top">
                     <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
@@ -67,7 +58,7 @@
                             <li class="user-menu">
                                 <a href="{{ route('account') }}">
                                     <img src="https://www.gravatar.com/avatar/{{ md5(strtolower(Auth::user()->email)) }}?s=160" class="user-image" alt="User Image">
-                                    <span class="hidden-xs"><b>{{ Auth::user()->name_first }} {{ Auth::user()->name_last }}</b></span>
+                                    <span class="hidden-xs">{{ Auth::user()->name_first }} {{ Auth::user()->name_last }}</span>
                                 </a>
                             </li>
                             @if(isset($sidebarServerList))
@@ -99,35 +90,33 @@
                             </div>
                         </div>
                     @endif
-                    <hr class="my-3">
                     <ul class="sidebar-menu tree" data-widget="tree">
                         <li class="header">@lang('navigation.account.header')</li>
-                        <li class="{{ Route::currentRouteName() !== 'index' ?: 'active' }}">
-                            <a href="{{ route('index')}}">
-                                <i class="fa fa-server color-fa"></i> <span>@lang('navigation.account.my_servers')</span>
-                            </a>
-                        </li>
                         <li class="{{ Route::currentRouteName() !== 'account' ?: 'active' }}">
                             <a href="{{ route('account') }}">
-                                <i class="fa fa-user color-fa"></i> <span>@lang('navigation.account.my_account')</span>
+                                <i class="fa fa-user"></i> <span>@lang('navigation.account.my_account')</span>
                             </a>
                         </li>
                         <li class="{{ Route::currentRouteName() !== 'account.security' ?: 'active' }}">
                             <a href="{{ route('account.security')}}">
-                                <i class="fa fa-lock color-fa"></i> <span>@lang('navigation.account.security_controls')</span>
+                                <i class="fa fa-lock"></i> <span>@lang('navigation.account.security_controls')</span>
                             </a>
                         </li>
                         <li class="{{ (Route::currentRouteName() !== 'account.api' && Route::currentRouteName() !== 'account.api.new') ?: 'active' }}">
                             <a href="{{ route('account.api')}}">
-                                <i class="fa fa-code color-fa"></i> <span>@lang('navigation.account.api_access')</span>
+                                <i class="fa fa-code"></i> <span>@lang('navigation.account.api_access')</span>
+                            </a>
+                        </li>
+                        <li class="{{ Route::currentRouteName() !== 'index' ?: 'active' }}">
+                            <a href="{{ route('index')}}">
+                                <i class="fa fa-server"></i> <span>@lang('navigation.account.my_servers')</span>
                             </a>
                         </li>
                         @if (isset($server->name) && isset($node->name))
-                        <hr class="my-3">
                             <li class="header">@lang('navigation.server.header')</li>
                             <li class="{{ Route::currentRouteName() !== 'server.index' ?: 'active' }}">
                                 <a href="{{ route('server.index', $server->uuidShort) }}">
-                                    <i class="fa fa-terminal color-fa"></i> <span>@lang('navigation.server.console')</span>
+                                    <i class="fa fa-terminal"></i> <span>@lang('navigation.server.console')</span>
                                     <span class="pull-right-container muted muted-hover" href="{{ route('server.console', $server->uuidShort) }}" id="console-popout">
                                         <span class="label label-default pull-right" style="padding: 3px 5px 2px 5px;">
                                             <i class="fa fa-external-link"></i>
@@ -142,7 +131,7 @@
                                     @endif
                                 >
                                     <a href="{{ route('server.files.index', $server->uuidShort) }}">
-                                        <i class="fa fa-files-o color-fa"></i> <span>@lang('navigation.server.file_management')</span>
+                                        <i class="fa fa-files-o"></i> <span>@lang('navigation.server.file_management')</span>
                                     </a>
                                 </li>
                             @endcan
@@ -153,7 +142,7 @@
                                     @endif
                                 >
                                     <a href="{{ route('server.subusers', $server->uuidShort)}}">
-                                        <i class="fa fa-users color-fa"></i> <span>@lang('navigation.server.subusers')</span>
+                                        <i class="fa fa-users"></i> <span>@lang('navigation.server.subusers')</span>
                                     </a>
                                 </li>
                             @endcan
@@ -164,7 +153,7 @@
                                     @endif
                                 >
                                     <a href="{{ route('server.schedules', $server->uuidShort)}}">
-                                        <i class="fa fa-clock-o color-fa"></i> <span>@lang('navigation.server.schedules')</span>
+                                        <i class="fa fa-clock-o"></i> <span>@lang('navigation.server.schedules')</span>
                                         <span class="pull-right-container">
                                             <span class="label label-primary pull-right">{{ \Pterodactyl\Models\Schedule::select('id')->where('server_id', $server->id)->where('is_active', 1)->count() }}</span>
                                         </span>
@@ -178,7 +167,7 @@
                                     @endif
                                 >
                                     <a href="{{ route('server.databases.index', $server->uuidShort)}}">
-                                        <i class="fa fa-database color-fa"></i> <span>@lang('navigation.server.databases')</span>
+                                        <i class="fa fa-database"></i> <span>@lang('navigation.server.databases')</span>
                                     </a>
                                 </li>
                             @endcan
@@ -189,7 +178,7 @@
                                     @endif
                                 ">
                                     <a href="#">
-                                        <i class="fa fa-gears color-fa"></i>
+                                        <i class="fa fa-gears"></i>
                                         <span>@lang('navigation.server.configuration')</span>
                                         <span class="pull-right-container">
                                             <i class="fa fa-angle-left pull-right"></i>
@@ -212,11 +201,10 @@
                                 </li>
                             @endif
                             @if(Auth::user()->root_admin)
-                            <hr class="my-3">
                                 <li class="header">@lang('navigation.server.admin_header')</li>
                                 <li>
                                     <a href="{{ route('admin.servers.view', $server->id) }}" target="_blank">
-                                        <i class="fa fa-cog color-fa"></i> <span>@lang('navigation.server.admin')</span>
+                                        <i class="fa fa-cog"></i> <span>@lang('navigation.server.admin')</span>
                                     </a>
                                 </li>
                             @endif
@@ -254,11 +242,11 @@
                 </section>
             </div>
             <footer class="main-footer">
-                <div class="pull-right small text-black" style="margin-right:10px;">
-                    <strong><i class="fa fa-fw {{ $appIsGit ? 'fa-git-square' : 'fa-code-fork' }}"></i></strong> {{ $appVersion }}
+                <div class="pull-right small text-gray" style="margin-right:10px;margin-top:-7px;">
+                    <strong><i class="fa fa-fw {{ $appIsGit ? 'fa-git-square' : 'fa-code-fork' }}"></i></strong> {{ $appVersion }}<br />
                     <strong><i class="fa fa-fw fa-clock-o"></i></strong> {{ round(microtime(true) - LARAVEL_START, 3) }}s
                 </div>
-                Copyright &copy; 2015 - {{ date('Y') }} <a href="https://pterodactyl.io/">Pterodactyl Software</a>
+                Copyright &copy; 2015 - {{ date('Y') }} <a href="https://pterodactyl.io/">Pterodactyl Software</a>.
             </footer>
             @if(isset($sidebarServerList))
                 <aside class="control-sidebar control-sidebar-dark">
@@ -309,10 +297,9 @@
                             title: 'Do you want to log out?',
                             type: 'warning',
                             showCancelButton: true,
-                            confirmButtonColor: '#f5365c ',
+                            confirmButtonColor: '#d9534f',
                             cancelButtonColor: '#d33',
-                            confirmButtonText: 'Log out',
-                            cancelButtonText: 'Cancel'
+                            confirmButtonText: 'Log out'
                         }, function () {
                             window.location = $(that).attr('href');
                         });

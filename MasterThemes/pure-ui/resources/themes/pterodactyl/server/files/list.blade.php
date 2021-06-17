@@ -33,7 +33,7 @@
         <thead>
             <tr>
                 <th class="middle min-size">
-                    <input type="checkbox" class="select-all-files hidden-xs" data-action="selectAll"><i class="fa fa-refresh color-fa muted muted-hover use-pointer" data-action="reload-files" style="font-size:14px;"></i>
+                    <input type="checkbox" class="select-all-files hidden-xs" data-action="selectAll"><i class="fa fa-refresh muted muted-hover use-pointer" data-action="reload-files" style="font-size:14px;"></i>
                 </th>
                 <th>@lang('server.files.file_name')</th>
                 <th class="hidden-xs">@lang('server.files.size')</th>
@@ -44,7 +44,7 @@
         <tbody id="append_files_to">
             @if (isset($directory['first']) && $directory['first'] === true)
                 <tr data-type="disabled">
-                    <td class="middle min-size"><i class="fa fa-folder color-fa" style="margin-left: 0.859px;"></i></td>
+                    <td class="middle min-size"><i class="fa fa-folder" style="margin-left: 0.859px;"></i></td>
                     <td><a href="/server/{{ $server->uuidShort }}/files" data-action="directory-view">&larr;</a></td>
                     <td class="hidden-xs"></td>
                     <td class="hidden-xs"></td>
@@ -53,7 +53,7 @@
             @endif
             @if (isset($directory['show']) && $directory['show'] === true)
                 <tr data-type="disabled">
-                    <td class="middle min-size"><i class="fa fa-folder color-fa" style="margin-left: 0.859px;"></i></td>
+                    <td class="middle min-size"><i class="fa fa-folder" style="margin-left: 0.859px;"></i></td>
                     <td data-name="{{ rawurlencode($directory['link']) }}">
                         <a href="/server/{{ $server->uuidShort }}/files" data-action="directory-view">&larr; {{ $directory['link_show'] }}</a>
                     </td>
@@ -65,7 +65,7 @@
             @foreach ($folders as $folder)
                 <tr data-type="folder">
                     <td class="middle min-size" data-identifier="type">
-                        <input type="checkbox" class="select-folder hidden-xs" data-action="addSelection"><i class="fa fa-folder color-fa" style="margin-left: 0.859px;"></i>
+                        <input type="checkbox" class="select-folder hidden-xs" data-action="addSelection"><i class="fa fa-folder" style="margin-left: 0.859px;"></i>
                     </td>
                     <td data-identifier="name" data-name="{{ rawurlencode($folder['entry']) }}" data-path="@if($folder['directory'] !== ''){{ rawurlencode($folder['directory']) }}@endif/">
                         <a href="/server/{{ $server->uuidShort }}/files" data-action="directory-view">{{ $folder['entry'] }}</a>
@@ -82,7 +82,7 @@
                         @endif
                     </td>
                     <td class="min-size">
-                        <button class="btn btn-xxs btn-default disable-menu-hide" data-action="toggleMenu" style="padding:2px 6px 0px;"><i class="fa fa-ellipsis-h color-fa disable-menu-hide"></i></button>
+                        <button class="btn btn-xxs btn-default disable-menu-hide" data-action="toggleMenu" style="padding:2px 6px 0px;"><i class="fa fa-ellipsis-h disable-menu-hide"></i></button>
                     </td>
                 </tr>
             @endforeach
@@ -100,7 +100,7 @@
                             'application/x-bzip2',
                             'application/java-archive'
                         ]))
-                            <i class="fa fa-file-archive-o color-fa" style="margin-left: 2px;"></i>
+                            <i class="fa fa-file-archive-o" style="margin-left: 2px;"></i>
                         @elseif(in_array($file['mime'], [
                             'application/json',
                             'application/javascript',
@@ -112,30 +112,30 @@
                             'text/x-perl',
                             'text/x-shellscript'
                         ]))
-                            <i class="fa fa-file-code-o color-fa" style="margin-left: 2px;"></i>
+                            <i class="fa fa-file-code-o" style="margin-left: 2px;"></i>
                         @elseif(starts_with($file['mime'], 'image'))
-                            <i class="fa fa-file-image-o color-fa" style="margin-left: 2px;"></i>
+                            <i class="fa fa-file-image-o" style="margin-left: 2px;"></i>
                         @elseif(starts_with($file['mime'], 'video'))
-                            <i class="fa fa-file-video-o color-fa" style="margin-left: 2px;"></i>
+                            <i class="fa fa-file-video-o" style="margin-left: 2px;"></i>
                         @elseif(starts_with($file['mime'], 'video'))
-                            <i class="fa fa-file-audio-o color-fa" style="margin-left: 2px;"></i>
+                            <i class="fa fa-file-audio-o" style="margin-left: 2px;"></i>
                         @elseif(starts_with($file['mime'], 'application/vnd.ms-powerpoint'))
-                            <i class="fa fa-file-powerpoint-o color-fa" style="margin-left: 2px;"></i>
+                            <i class="fa fa-file-powerpoint-o" style="margin-left: 2px;"></i>
                         @elseif(in_array($file['mime'], [
                             'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
                             'application/vnd.openxmlformats-officedocument.wordprocessingml.template',
                             'application/msword'
                         ]) || starts_with($file['mime'], 'application/vnd.ms-word'))
-                            <i class="fa fa-file-word-o color-fa" style="margin-left: 2px;"></i>
+                            <i class="fa fa-file-word-o" style="margin-left: 2px;"></i>
                         @elseif(in_array($file['mime'], [
                             'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                             'application/vnd.openxmlformats-officedocument.spreadsheetml.template',
                         ]) || starts_with($file['mime'], 'application/vnd.ms-excel'))
-                            <i class="fa fa-file-excel-o color-fa" style="margin-left: 2px;"></i>
+                            <i class="fa fa-file-excel-o" style="margin-left: 2px;"></i>
                         @elseif($file['mime'] === 'application/pdf')
-                            <i class="fa fa-file-pdf-o color-fa" style="margin-left: 2px;"></i>
+                            <i class="fa fa-file-pdf-o" style="margin-left: 2px;"></i>
                         @else
-                            <i class="fa fa-file-text-o color-fa" style="margin-left: 2px;"></i>
+                            <i class="fa fa-file-text-o" style="margin-left: 2px;"></i>
                         @endif
                     </td>
                     <td data-identifier="name" data-name="{{ rawurlencode($file['entry']) }}" data-path="@if($file['directory'] !== ''){{ rawurlencode($file['directory']) }}@endif/">
@@ -161,7 +161,7 @@
                         @endif
                     </td>
                     <td class="min-size">
-                        <button class="btn btn-xxs btn-default disable-menu-hide" data-action="toggleMenu" style="padding:2px 6px 0px;"><i class="fa fa-ellipsis-h color-fa disable-menu-hide"></i></button>
+                        <button class="btn btn-xxs btn-default disable-menu-hide" data-action="toggleMenu" style="padding:2px 6px 0px;"><i class="fa fa-ellipsis-h disable-menu-hide"></i></button>
                     </td>
                 </tr>
             @endforeach

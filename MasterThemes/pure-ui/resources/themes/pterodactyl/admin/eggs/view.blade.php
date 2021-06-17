@@ -181,7 +181,7 @@
     <script>
     $('#pConfigFrom').select2();
     $('#deleteButton').on('mouseenter', function (event) {
-        $(this).find('i').html('&nbsp;&nbsp;<font face="Open Sans">Delete Egg</font>');
+        $(this).find('i').html(' Delete Egg');
     }).on('mouseleave', function (event) {
         $(this).find('i').html('');
     });

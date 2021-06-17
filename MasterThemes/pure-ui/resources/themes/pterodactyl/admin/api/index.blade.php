@@ -72,7 +72,7 @@
                     allowOutsideClick: true,
                     closeOnConfirm: false,
                     confirmButtonText: 'Revoke',
-                    confirmButtonColor: '#f5365c',
+                    confirmButtonColor: '#d9534f',
                     showLoaderOnConfirm: true
                 }, function () {
                     $.ajax({

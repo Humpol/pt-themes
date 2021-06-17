@@ -112,7 +112,7 @@
 
 @section('footer-scripts')
     @parent
-
+    
     <script>
         function saveSettings() {
             return $.ajax({

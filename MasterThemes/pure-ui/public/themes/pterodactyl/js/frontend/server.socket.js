@@ -113,7 +113,7 @@ var Server = (function ()  {
                 $('#server_status_icon').html('<i class="fa fa-circle text-warning"></i> Stopping');
                 break;
             default:
-                $('#server_status_icon').html('<i class="fa fa-question-circle text-danger"></i> Connexion error');
+                $('#server_status_icon').html('<i class="fa fa-question-circle text-danger"></i> Connection Error');
                 break;
         }
     }

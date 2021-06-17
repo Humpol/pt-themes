@@ -57,36 +57,6 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="box">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">@lang('base.account.update_email')</h3>
-                    </div>
-                    <form action="{{ route('account') }}" method="post">
-                        <div class="box-body">
-                            <div class="form-group">
-                                <label for="new_email" class="control-label">@lang('base.account.new_email')</label>
-                                <div>
-                                    <input type="email" class="form-control" name="new_email" />
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="password" class="control-label">@lang('base.account.current_password')</label>
-                                <div>
-                                    <input type="password" class="form-control" name="current_password" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-footer">
-                            {!! csrf_field() !!}
-                            <input type="hidden" name="do_action" value="email" />
-                            <input type="submit" class="btn btn-primary btn-sm" value="@lang('base.account.update_email')" />
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
     </div>
     <div class="col-sm-6">
         <div class="row">
@@ -124,9 +94,21 @@
                                 <div class="form-group col-xs-12">
                                     <label for="language" class="control-label">@lang('base.account.language')</label>
                                     <div>
-                                        <select name="language" id="pLanguage" class="form-control">
+                                        <select name="language" id="language" class="form-control">
                                             @foreach($languages as $key => $value)
                                                 <option value="{{ $key }}" {{ Auth::user()->language !== $key ?: 'selected' }}>{{ $value }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-xs-12">
+                                    <label for="theme" class="control-label">@lang('base.account.themes')</label>
+                                    <div>
+                                        <select name="theme" id="theme" class="form-control">
+                                            @foreach($themes as $theme)
+                                                <option value="{{ $theme->name }}" {{ Auth::user()->theme !== $theme->name ?: 'selected' }}>{{ $theme->name }}</option>
                                             @endforeach
                                         </select>
                                     </div>
@@ -142,14 +124,36 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">@lang('base.account.update_email')</h3>
+                    </div>
+                    <form action="{{ route('account') }}" method="post">
+                        <div class="box-body">
+                            <div class="form-group">
+                                <label for="new_email" class="control-label">@lang('base.account.new_email')</label>
+                                <div>
+                                    <input type="email" class="form-control" name="new_email" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="control-label">@lang('base.account.current_password')</label>
+                                <div>
+                                    <input type="password" class="form-control" name="current_password" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-footer">
+                            {!! csrf_field() !!}
+                            <input type="hidden" name="do_action" value="email" />
+                            <input type="submit" class="btn btn-primary btn-sm" value="@lang('base.account.update_email')" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-@endsection
-
-@section('footer-scripts')
-    @parent
-    <script>
-    $('#pTheme').select2();
-    $('#pLanguage').select2();
-    </script>
 @endsection

@@ -18,7 +18,7 @@
     <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
         <div class="box box-warning">
             <div class="box-body text-center">
-                <h1 class="text-error" style="font-size: 160px !important;font-weight: 100 !important;">404</h1>
+                <h1 class="text-yellow" style="font-size: 160px !important;font-weight: 100 !important;">404</h1>
                 <p class="text-muted">@lang('base.errors.404.desc')</p>
             </div>
             <div class="box-footer with-border">

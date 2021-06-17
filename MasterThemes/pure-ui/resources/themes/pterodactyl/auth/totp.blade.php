@@ -20,44 +20,23 @@
 @endsection
 
 @section('content')
-    <div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<div class="login100-pic js-tilt" data-tilt>
-                    <a href="{{ route('auth.login') }}" style="cursor: default;"><img src="/logo.png" alt="IMG"></a>
-				</div>
-
-				<form class="login100-form validate-form" id="totpForm" action="{{ route('auth.totp') }}" method="POST">
-					<span class="login100-form-title">2FA Checkpoint</span>
-
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input type="number" name="2fa_token" class="form-control input-lg input100" required placeholder="@lang('strings.2fa_token')" autofocus>
-                        <span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-shield" aria-hidden="true"></i>
-						</span>
-					</div>
-
-					
-					<div class="container-login100-form-btn">
-						{!! csrf_field() !!}
-                        <input type="hidden" name="verify_token" value="{{ $verify_key }}" />
-						<button type="submit" class="btn btn-primary btn-block g-recaptcha pterodactyl-login-button--main login100-form-btn">@lang('strings.submit')</button>
-					</div>
-
-					<div class="text-center p-t-90">
-						<a class="txt2" href="#">
-							<p class="small login-copyright text-center">Copyright &copy; 2015 - {{ date('Y') }} <a href="https://pterodactyl.io/">Pterodactyl Software</a></p>
-						</a>
-					</div>
-					<div class="text-center p-t-5">
-						<a class="txt2" href="#">
-            				<strong><i class="fa fa-fw {{ $appIsGit ? 'fa-git-square' : 'fa-code-fork' }}"></i></strong> {{ $appVersion }}
-							<strong><i class="fa fa-fw fa-clock-o"></i></strong> {{ round(microtime(true) - LARAVEL_START, 3) }}s
-						</a>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
+<div class="row">
+    <div class="col-sm-offset-3 col-xs-offset-1 col-sm-6 col-xs-10 pterodactyl-login-box">
+        <form id="totpForm" action="{{ route('auth.totp') }}" method="POST">
+            <div class="form-group has-feedback">
+                <div class="pterodactyl-login-input">
+                    <input type="number" name="2fa_token" class="form-control input-lg" required placeholder="@lang('strings.2fa_token')" autofocus>
+                    <span class="fa fa-shield form-control-feedback fa-lg"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-offset-8 col-xs-4">
+                    {!! csrf_field() !!}
+                    <input type="hidden" name="verify_token" value="{{ $verify_key }}" />
+                    <button type="submit" class="btn btn-primary btn-block btn-flat pterodactyl-login-button--main">@lang('strings.submit')</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 @endsection
