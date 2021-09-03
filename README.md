@@ -26,12 +26,12 @@ To Install Run the following command in the Panel Directory!
 curl https://raw.githubusercontent.com/Humpol/pt-themes/main/MasterThemes/pure-ui/build.sh | sh
 ```
 
-### Tango Twist (Panel 0.7.18)
-A Touch Of Orange
-![](https://github.com/TheFonix/Pterodactyl-Themes/blob/master/MasterThemes/TangoTwist/ss/TangoTwist.png?)
+### Baklava (Panel 0.7.18)
+Pure Lava
+![](https://i.imgur.com/IUPbhKy.png)
 To Install Run the following command in the Panel Directory!
 ```
-curl https://raw.githubusercontent.com/TheFonix/Pterodactyl-Themes/master/MasterThemes/TangoTwist/build.sh | sh
+curl https://raw.githubusercontent.com/Humpol/pt-themes/main/MasterThemes/baklava/build.sh | sh
 ```
 
 ### Blue Brick (Panel 0.7.18)
