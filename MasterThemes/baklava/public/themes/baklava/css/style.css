@@ -1,0 +1,115 @@
+/* CLASS: top-header */
+.top-header small {
+	margin-left: 10px;
+	font-size: 16px;
+}
+
+.top-header h1 {
+	width: 50%;
+}
+
+.top-header ol {
+    position: absolute;
+	right: 35px;
+}
+
+.top-header ol li {
+	padding-left: 5px;
+}
+
+.top-header ol li+li::before {
+	content: '\f105';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+}
+
+.top-header .breadcrumb {
+	border-left: none;
+}
+
+/* NOTIFICATION */
+[data-notify="container"][role="alert"].alert-danger {
+	background: rgb(234 84 85) !important;
+	color: #fff !important;
+}
+
+[data-notify="container"][role="alert"].alert-success {
+	background: rgb(40 199 111) !important;
+	color: #fff !important;
+}
+
+[data-notify="container"][role="alert"].alert-warning {
+	background: rgb(255 159 67) !important;
+	color: #fff !important;
+}
+
+[data-notify="container"][role="alert"].alert-primary {
+	background: rgba(115, 103, 240, 0.2) !important;
+	color: #fff !important;
+}
+
+/* INPUT */
+.input-group-addon {
+	padding: 10px;
+}
+
+.terminal_input--input {
+	color: #8d83f3 !important;
+}
+
+
+/* LOGIN PAGE */
+.bg-authentication .login-footer {
+	padding : 0rem 1.5rem 0.5rem;
+}
+
+.bg-authentication .login-footer .footer-btn .btn {
+	padding : 0.9rem 1.2rem !important;
+	margin : 1rem 1rem 1rem 0rem;
+}
+
+.login-footer .btn-discord {
+	background-color: #7289DA;
+	border-color: #fff;
+	color: #fff;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.bg-authentication {
+	width : 100%;
+	}
+}
+
+/* Background Colors */
+.bg-green {
+	background-color: #28C76F !important;
+}
+
+/* File Manager */
+#fileOptionMenu {
+	padding: 10px;
+}
+
+/* BREADCRUMB */
+@media (max-width: 768px) {
+	.top-header .breadcrumb {
+		display: none;
+	}
+
+	.top-header h1 {
+		width: 100%;
+	}
+}
+
+/* DARK LAYOUT */
+body.dark-layout .top-header ol li {
+	color: #cccbcb;
+}
+
+body.dark-layout .top-header ol li.active {
+	color: #fff;
+}
+
+body.dark-layout pre {
+	color: #fff;
+}
