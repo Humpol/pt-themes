@@ -10,7 +10,7 @@ Sure! All of the themes you see below are made for you to take and change for yo
 ## Panel Versioning
 Make sure that the theme you are installing corresponds with the version of the panel you are running; no help will be given if you have mismatched versions!
 ## How do i use them?
-Each Theme has a small code snippet that you must run inside the Pterodactyl panel directory, this is normally located at `/var/www/html/pterodactyl/` The implementation command will take a backup of your current panel in case anything goes wrong during the theme change! So you don't need to worry about losing anything you've already made!
+Each Theme has a small code snippet that you must run inside the Pterodactyl panel directory, this is normally located at `/var/www/pterodactyl/` The implementation command will take a backup of your current panel in case anything goes wrong during the theme change! So you don't need to worry about losing anything you've already made!
 
 ## Suggestions
 I'm sure there is something you would love to see changed, head over to the issues tab and i'll attempt on make it happen!
@@ -33,12 +33,12 @@ To Install Run the following command in the Panel Directory!
 curl https://raw.githubusercontent.com/Humpol/pt-themes/main/MasterThemes/baklava/build.sh | sh
 ```
 
-### Blue Brick (Panel 0.7.18)
+### Unix (Panel 1.x.x)
 A Sort Of Blue
-![](https://github.com/TheFonix/Pterodactyl-Themes/blob/master/MasterThemes/BlueBrick/ss/BlueBrick.png?)
+![](https://i.ibb.co/16fCg2m/image.png?)
 To Install Run the following command in the Panel Directory!
 ```
-curl https://raw.githubusercontent.com/TheFonix/Pterodactyl-Themes/master/MasterThemes/BlueBrick/build.sh | sh
+curl https://raw.githubusercontent.com/Humpol/pt-themes/main/MasterThemes/unix/build.sh | sh
 ```
 
 ### Minecraft Madness (Panel 0.7.18)
