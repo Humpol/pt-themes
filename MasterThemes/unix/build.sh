@@ -33,19 +33,6 @@ if [ ! -f "artisan" ]; then
 
     php artisan migrate --path=/database/migrations/2021_05_30_141248_create_unix_settings_table.php
 
-    echo "Downloading panel depecies"
-
-    curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-    apt install -y nodejs
-
-    npm i -g yarn
-
-    cd /var/www/pterodactyl
-    yarn
-
-    cd /var/www/pterodactyl
-    yarn build:production
-
     echo "Files have been copied over!"
     sleep 2
 
