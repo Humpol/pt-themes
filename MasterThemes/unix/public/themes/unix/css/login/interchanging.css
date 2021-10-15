@@ -1,0 +1,26 @@
+.eIomku:not([type="checkbox"]):not([type="radio"]), .hmhrLa:not([type="checkbox"]):not([type="radio"]) {
+    background-color: var(--theme-secondary-bg) !important;
+ }
+
+
+.kDhnAT {
+    margin-top: 5% !important
+}
+
+body {
+    background-color: var(--theme-bg)  !important;
+}
+
+.jbDTOK {
+    background-color: var(--theme-primary-bg) !important;
+}
+
+.dlUeSf {
+    color: var(--body-color); !important
+}
+
+.gzrAQh {
+    background-color: var(--theme-button-bg) !important;
+    box-shadow: var(--theme-button-bg) 0px 0 11px !important;
+    border-color: var(--theme-button-bg) !important;
+}

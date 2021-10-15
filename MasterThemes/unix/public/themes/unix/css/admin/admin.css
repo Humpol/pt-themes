@@ -1,0 +1,6 @@
+.pickr {
+    position: relative;
+    overflow: visible;
+    transform: translateY(0);
+    text-align: center;
+}

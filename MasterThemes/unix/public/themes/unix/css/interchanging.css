@@ -1,0 +1,196 @@
+    /**<!---- primary Background colors  DEFAULT #1f1d2b --->**/
+
+    body {
+        background-color: var(--theme-bg) !important;
+    }
+    
+    .cWFcHc {
+        background-color: var(--theme-bg) !important;
+    }
+    
+    .ebtnLL {
+        background-color: var(--theme-bg)  !important;
+    }
+    .kqnFDg, .bzyHyf {
+        background-color: var(--theme-bg) !important;
+    }
+    
+        /**<!---- primary content colors  #0000000d --->**/
+    
+    
+    .kwjWaB {
+        background-color: var(--theme-primary-bg) !important;
+    }
+    .gFWKai {
+        background-color: var(--theme-primary-bg) !important;
+    }
+    .hfBvRz {
+        background-color: var(--theme-primary-bg) !important;
+    }
+    
+    .kHuGmn {
+        background-color: var(--theme-primary-bg) !important;
+    }
+
+    .hAozti {
+        background-color: var(--theme-primary-bg) !important;
+    }
+        
+        
+        /**<!---- Secondary content colors  #0000001a --->**/
+        
+    .JRmxO {
+        background-color: var(--theme-secondary-bg) !important;
+    }
+    
+    .eBRJeB {
+        background-color: var(--theme-secondary-bg) !important;
+    }
+    
+    .kmjiH {
+        background-color: var(--theme-secondary-bg) !important;
+    }
+    
+    .farUaV {
+        background-color: var(--theme-secondary-bg) !important;
+    }
+    
+    .cKwXAB {
+        background-color: var(--theme-secondary-bg) !important;
+    }
+    
+    .bwJbXo {
+        background-color: var(--theme-secondary-bg) !important;
+    }
+    
+    .eDhiE:not([type="checkbox"]):not([type="radio"]) {
+        background-color: var(--theme-secondary-bg) !important;
+    }  
+    
+    .hucbCe {
+        background-color: var(--theme-secondary-bg) !important;
+    }
+        
+    .kZaCVF {
+        background-color: var(--theme-secondary-bg) !important;
+    }
+    
+    .iZMsvi {
+        background-color: var(--theme-secondary-bg) !important;
+    }
+    
+    .iYSUfg {
+        background-color: var(--theme-secondary-bg) !important;
+    }
+    
+    .cswOgL {
+        background-color: var(--theme-secondary-bg) !important;
+    }
+    
+    .kQdsMI {
+        background-color: var(--theme-secondary-bg) !important;
+    }
+    
+    .epSLdr {
+        background-color: var(--theme-secondary-bg) !important;
+    }
+    
+    .dHnkp {
+        background-color: var(--theme-secondary-bg) !important;
+    }
+    
+    .enHGJV {
+        background-color: var(--theme-secondary-bg) !important;
+    }
+
+    
+    
+    
+    
+    
+        
+        /**<!---- Other CSS  --->**/
+    
+    
+      .hYAlTx {
+          margin-left: 0px !important;
+        }
+    
+      .gObYUs {
+          padding: 0 !important;
+        }
+    
+      .fRhluP {
+        padding: 0px !important;
+      }
+    
+    .grusjm {
+        background-color: #00000026 !important; 
+    }
+    
+    .JQChZ {
+        background-color: #00000026 !important;   
+    }
+    
+    .eGIYvK {
+        background-color: #0000000f !important;  
+    }
+    
+    .lpPPi {
+        background: #00000012 !important;
+    }
+    .gHwjbw {
+        background-color: #00000017 !important;
+    }
+    
+    
+    .liBonM {
+        background: #00000021 !important;
+    }
+    
+    .cagwOa {
+      background: transparent !important;
+      
+    }
+    
+    .gIjyrc {
+      color: white !important;
+    }
+    
+    .gSktoh {
+    color: white !important;
+    }
+    
+    .iffhqY {
+      width: 40% !important;
+      --tw-shadow: none !important;
+    }
+
+    .kHuGmn {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .kHuGmn .icon {
+        font-size: 2rem;
+        background-color: transparent !important;
+    }
+
+    .cWFcHc > div > a:not(:first-of-type), .cWFcHc > div > div:not(:first-of-type), .cWFcHc > div > a, .cWFcHc > div > div {
+            color: var(--body-color);
+    }
+
+    .foOAsU {
+        background: var(--theme-secondary-bg) !important;
+        border-color: #606d7b !important;
+        border-width: 2px !important;
+    }
+
+    .bEuYIR, .jxeDhP, .hEElVU  {
+        background: var(--theme-secondary-bg) !important;
+    }
+
+    .iOAoAC, .kHxJHi {
+        background: var(--theme-button-bg) !important;
+        color: var(--body-active-color) !important;
+    }
