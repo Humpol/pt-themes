@@ -1,0 +1,226 @@
+
+
+/* Console  CSS*/
+
+.kHuGmn {
+    background: var(--second-background) !important;
+    color: var(--text-color) !important;
+    justify-content: space-between !important;
+}
+
+.card-body, .alert-white.rounded, .navbar-search-light .input-group { 
+background: var(--second-background) !important; 
+}
+
+.card-text {
+color: var(--text-color) !important;
+}
+
+.jSyjnD, .JQChZ {
+    background: var(--second-background) !important;
+    color: var(--text-color) !important;
+}
+
+.kHuGmn:hover{
+    color: var(--white-hover) !important;
+}
+
+.kHuGmn .icon, .icon i, .icon svg {
+    background-color: transparent !important;
+}
+
+.ToRTP {
+    color: var(--text-color) !important;
+}
+
+.Rirlp, .XdnZl {
+    color: var(--first-color) !important;
+}
+
+.gdhLjd > label {
+    background-color: var(--first-color) !important;
+}
+/* Files CSS*/
+.eGIYvK {
+    background-color: var(--second-background) !important;
+}
+
+.hYAlTx, .bKhVbh {
+    color: var(--first-color) !important;
+}
+
+.bKhVbh:hover {
+    color: var(--first-color) !important;
+}
+
+.eGIYvK:hover {
+    background-color: var(--second-background) !important;
+    color: var(--text-color) !important;
+    ;
+}
+
+.cBxTVo, .bigDFX, .lOfYt, .dxQrCS, .cexxxZ, .dGqylD {
+    color: var(--first-color) !important;
+}
+
+/* Databases CSS */
+.kqnFDg {
+    background-color: var(--main-background) !important;
+}
+
+.kgQbLG {
+    color: var(--text-color) !important;
+}
+
+.eDhiE:not([type="checkbox"]):not([type="radio"]), .eDhiE:not([type="checkbox"]):not([type="radio"]) + .input-help 
+{
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+}
+
+.eFKDEh {
+    color: var(--text-color) !important;
+}
+
+.lepTyw:not([type="checkbox"]):not([type="radio"]) {
+    background-color: #0000000f !important;
+}
+
+/* Schedules CSS */
+.cKwXAB, .bwJbXo {
+    background: transparent !important;
+}
+
+.jywpgX, .cwwSnu, .euABFW, .iVamdZ, .ewQBXg, .tXPeL, .iQoxEx, .khtfyO, .iCEBYC, .kjXNsK, .fHjOcg, .gHjzwN, .eENhNd  {
+    color: var(--text-color);
+}
+.dHRxAp {color:white !important;}
+
+.bFuXYc:hover, .bFuXYc {
+    color: var(--first-color) !important;
+}
+
+.kQdsMI, .cswOgL, .foOAsU {
+    background-color: var(--second-background) !important;
+}
+
+.kjdsoe:hover {
+    background-color: var(--first-color) !important;
+}
+
+.inIIqG, .kmjiH {
+    color: red;
+    border-color: red;
+}
+
+.kQdsMI {
+    border-bottom-width: 0px;
+    border-top-width: 2px;
+    --tw-border-opacity: 0;
+    border-color: var(--first-color) !important;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+
+/* Backups CSS */
+.farUaV, .hAozti, .iZMsvi, .iYSUfg {
+    background-color: #00000008 !important;
+    color: var(--text-color) !important;
+}
+
+/* Network CSS */
+.hIHBYg {
+    background-color: var(--second-background) !important;
+}
+
+.epSLdr, .kZaCVF, .hucbCe, .hucbCe:hover:not(:disabled), .hucbCe:focus {
+    background-color: #00000008 !important;
+    color: var(--text-color) !important;
+}
+
+.hucbCe, .hucbCe:hover:not(:disabled), .hucbCe:focus {
+    background-color: var(--second-background) !important !important;
+}
+
+/* Startup CSS */
+
+.ifNwiE, .gHwjbw, .kwjWaB {
+    background-color: var(--second-background) !important;
+    border-color: transparent !important;
+}
+
+.dMZZHB {
+    color: white;
+    background-color: var(--first-color) !important;
+}
+
+/* Account CSS */
+.hfBvRz {
+    background-color: var(--second-background) !important;
+}
+
+.cKOMAz {
+color: var(--text-color) !important;
+}
+
+.dHnkp, .eDhiE:not([type="checkbox"]):not([type="radio"]), .eDhiE:not([type="checkbox"]):not([type="radio"]) + .input-help {
+    background-color: #00000008 !important;
+    color: var(--text-color) !important;
+}
+
+/* Other */
+.fNmetC, .hcJQtJ, .kAWZHe, .kZkdBl, .hSKhGC, .ka-difk {
+    color: var(--text-color) !important;
+}
+
+p, a, .cbdhsR {
+    color: var(--text-color) !important;
+}
+
+.boeqLY > div {
+    background-color: var(--second-background) !important;
+}
+
+
+
+.cNtZzN {
+    color: var(--text-color)
+}
+
+
+.hPQzca {
+    background-color: var(--first-color) !important;
+    opacity: 1;
+    border-color: transparent !important;
+}
+
+.hPQzca:hover {
+    background-color: var(--first-color) !important;
+    opacity: 0.9;
+}
+
+.evldyg {
+    padding-top: 10px;
+}
+
+.cNtZzN {
+    border-color: var(--first-color) !important;
+    color: var(--first-color) !important;
+}
+
+.cNYQhw { width: 528px !important; }
+
+.eoXHjC { background:  var(--second-background) !important; }
+
+.iKdyXj { height: 100px !important; }
+
+.cytrao, .kMifaF, .eXBlbs, .kNRuDt, .PBHUR {
+color: var(--text-color) !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+background: #0000002b !important;
+}
+
+.gFWKai { background: var(--second-background) !important; }

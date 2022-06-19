@@ -1,0 +1,25 @@
+.eIomku:not([type="checkbox"]):not([type="radio"]), .hmhrLa:not([type="checkbox"]):not([type="radio"]) {
+    background-color: var(--second-background) !important;
+ }
+
+
+.kDhnAT {
+    margin-top: 5% !important
+}
+
+body {
+    background-color: var( --main-background)  !important;
+}
+
+.jbDTOK {
+    background-color: var(--second-background); !important;
+}
+
+.dlUeSf {
+    color: var(--text-color); !important
+}
+
+.gzrAQh {
+    background-color: var(--first-color) !important;
+    box-shadow: var(--first-color) 0px 0 11px !important;
+}
