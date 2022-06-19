@@ -2,6 +2,14 @@
 =======
 ## Themes Ready for you to use:
 
+### Modern-UI (Panel 0.7.18)
+
+![](https://directleaks.to/attachments/1583017484300-png.4133/)
+
+```
+curl https://raw.githubusercontent.com/Humpol/pt-themes/main/MasterThemes/modernui/build.sh | sh
+```
+
 ### Pure-UI (Panel 0.7.18)
 
 ![](https://i.ibb.co/yYk3h51/image.png)
