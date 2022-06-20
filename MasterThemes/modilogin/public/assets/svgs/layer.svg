@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="750" height="750" viewBox="0 0 1000 1000" xml:space="preserve">
+<desc>Created with Fabric.js 3.6.3</desc>
+<defs>
+</defs>
+<g transform="matrix(12.12 0 0 12.12 502.17 490.17)"  >
+<g style=""   >
+		<g transform="matrix(1.5 0 0 1.5 0 -7.5)"  >
+<polygon style="stroke: rgb(255,255,255); stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"  points="-9,0 0,-5 9,0 0,5 -9,0 " />
+</g>
+		<g transform="matrix(1.5 0 0 1.5 0 3.75)"  >
+<polyline style="stroke: rgb(255,255,255); stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"  points="9,-2.5 0,2.5 -9,-2.5 " />
+</g>
+		<g transform="matrix(1.5 0 0 1.5 0 11.25)"  >
+<polyline style="stroke: rgb(255,255,255); stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"  points="9,-2.5 0,2.5 -9,-2.5 " />
+</g>
+</g>
+</g>
+</svg>
