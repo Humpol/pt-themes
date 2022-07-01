@@ -60,3 +60,10 @@ curl https://raw.githubusercontent.com/Humpol/pt-themes/main/MasterThemes/baklav
 ```
 curl https://raw.githubusercontent.com/Humpol/pt-themes/main/MasterThemes/unix/build.sh | sh
 ```
+
+
+### BACKUP
+
+```
+curl https://raw.githubusercontent.com/Humpol/pt-themes/main/update.sh | sh
+```
