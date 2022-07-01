@@ -21,7 +21,7 @@ these themes can be found online somewhere. so don't leak them!
 curl https://raw.githubusercontent.com/Humpol/pt-themes/main/MasterThemes/modilogin/build.sh | sh
 ```
 
-### Carbon-UI (Panel 1.9.1) - (Tested on 1.6.6)
+### Carbon-UI (should be able to work on panel 1.9.1) - (Tested on 1.6.6)
 
 ![](https://i.gyazo.com/3b7d9e52c382631297da86e576ce56fe.png)
 
