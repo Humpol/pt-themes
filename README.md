@@ -10,7 +10,7 @@
 curl https://raw.githubusercontent.com/Humpol/pt-themes/main/MasterThemes/modilogin/build.sh | sh
 ```
 
-### Carbon-UI (Panel 1.7.0)
+### Carbon-UI (Panel 1.9.1)
 
 ![](https://i.gyazo.com/3b7d9e52c382631297da86e576ce56fe.png)
 
