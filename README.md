@@ -1,6 +1,17 @@
 ![](https://github.com/TheFonix/Pterodactyl-Themes/blob/master/pteroBanner.png?)
 =======
+
+Hello everyone,
+
+this repository is only for people who want to have a theme installed automatically, so feel free to send me a theme and I'll turn it into a script.
+
+!!DISCLAIMER!!
+these themes can be found online somewhere. so don't leak them!
+
+
 ## Themes Ready for you to use:
+
+
 
 ### Modified-Login (Panel 1.8.1)
 
@@ -10,7 +21,7 @@
 curl https://raw.githubusercontent.com/Humpol/pt-themes/main/MasterThemes/modilogin/build.sh | sh
 ```
 
-### Carbon-UI (Panel 1.9.1)
+### Carbon-UI (Panel 1.9.1) - (Tested on 1.6.6)
 
 ![](https://i.gyazo.com/3b7d9e52c382631297da86e576ce56fe.png)
 
