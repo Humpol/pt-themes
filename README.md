@@ -61,6 +61,11 @@ curl https://raw.githubusercontent.com/Humpol/pt-themes/main/MasterThemes/baklav
 curl https://raw.githubusercontent.com/Humpol/pt-themes/main/MasterThemes/unix/build.sh | sh
 ```
 
+### Particles
+
+```
+curl https://raw.githubusercontent.com/Humpol/pt-themes/main/MasterThemes/paricles/build.sh | sh
+```
 
 ### BACKUP
 
