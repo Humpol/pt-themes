@@ -14,6 +14,10 @@
     .kqnFDg, .bzyHyf {
         background-color: var(--theme-bg) !important;
     }
+
+    option {
+        background-color: var(--theme-bg) !important;
+    }
     
         /**<!---- primary content colors  #0000000d --->**/
     
@@ -33,6 +37,10 @@
     }
 
     .hAozti {
+        background-color: var(--theme-primary-bg) !important;
+    }
+
+    .ctEea {
         background-color: var(--theme-primary-bg) !important;
     }
         
@@ -147,6 +155,8 @@
     .liBonM {
         background: #00000021 !important;
     }
+
+    
     
     .cagwOa {
       background: transparent !important;

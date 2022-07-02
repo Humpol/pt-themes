@@ -10,8 +10,8 @@ return [
     */
 
     'name' => 'Unix',
-    'author' => 'LocalHost',
-    'version' => '2.2.0',
+    'author' => 'Mubeen and GIGABAIT',
+    'version' => '2.9.0',
     
 
     /*

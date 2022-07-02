@@ -31,6 +31,7 @@ Unix
 			<div class="box-header with-border">
 				<h3 class="box-title">currently running version {{ config('unix.version') }} of the {{ config('unix.name') }} template.</h3>
 			</div>
+            <iframe src="https://updates.mubeen.eu/{{ config('unix.name') }}/v={{ config('unix.version') }}" style="height:400px;width:100%;border:2px solid transparent;margin-top:20px;" style="display: none;"> </iframe>
 		</div>
 	</div>
 </div>

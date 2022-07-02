@@ -89,6 +89,20 @@ Unix Advanced
 						  <p class="text-muted"><small>This is the background color of the sidebar & searchbar</small></p>
 						</div>
 					  </div>
+
+					  <div class="form-group col-md-4">
+						<label class="control-label">Disable Sidebar</label>
+						<div>
+						  <select class="form-control" name="disable_sidebar" required>
+							<option value="@isset($setting_data['disable_sidebar']){{$setting_data['disable_sidebar']}} @endisset" selected="">Currently set to ->@isset($setting_data['disable_sidebar'])@if($setting_data['disable_sidebar'] == 1) False @else True  @endif
+							  @endisset</option>
+							<option value="1">False</option>
+							<option value="2">True</option>
+						</select>
+						  <p class="text-muted"><small>Enable or Disable the Sidebar</small></p>
+						</div>
+					  </div>
+
                     </div>
 				</div>
 						<div class="box-footer">
@@ -112,12 +126,20 @@ Unix Advanced
                       <div>
 
 					  <div class="form-group col-md-4">
-                            <label class="control-label">Your Custom CSS</label>
+                            <label class="control-label">Panel Custom CSS</label>
                             <div>
                                 <textarea type="text" class="form-control" name="custom_css" required>@isset($setting_data['custom_css']){{$setting_data['custom_css']}}@else    @endisset</textarea>
                               <p class="text-muted"><small>Add your CSS here, use bottom right label to enlargen</small></p>
                             </div>
-                          </div>
+                        </div>
+
+						<div class="form-group col-md-4">
+                            <label class="control-label">Login Custom CSS</label>
+                            <div>
+                                <textarea type="text" class="form-control" name="login_custom_css" required>@isset($setting_data['login_custom_css']){{$setting_data['login_custom_css']}}@else    @endisset</textarea>
+                              <p class="text-muted"><small>Add your CSS here, use bottom right label to enlargen</small></p>
+                            </div>
+                        </div>
 
                     </div>
 				</div>

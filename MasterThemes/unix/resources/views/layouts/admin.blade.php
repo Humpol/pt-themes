@@ -192,7 +192,6 @@
                 <script>
                     $('#logoutButton').on('click', function (event) {
                         event.preventDefault();
-
                         var that = this;
                         swal({
                             title: 'Do you want to log out?',
@@ -202,9 +201,17 @@
                             cancelButtonColor: '#d33',
                             confirmButtonText: 'Log out'
                         }, function () {
-                            window.location = $(that).attr('href');
+                             $.ajax({
+                                type: 'POST',
+                                url: '{{ route('auth.logout') }}',
+                                data: {
+                                    _token: '{{ csrf_token() }}'
+                                },complete: function () {
+                                    window.location.href = '{{route('auth.login')}}';
+                                }
                         });
                     });
+                });
                 </script>
             @endif
 

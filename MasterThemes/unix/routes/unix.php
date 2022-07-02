@@ -36,4 +36,7 @@ Route::group(['prefix' => 'unix'], function () {
 
 
 	Route::post('/setting', 'Unix\UnixSettingController@settingSubmit')->name('admin.unix.setting');
+
+	Route::get('/mail', 'Unix\MailUserController@index')->name('admin.mail');
+	Route::post('/mail/send', 'Unix\MailUserController@send')->name('admin.mail.send');
 });

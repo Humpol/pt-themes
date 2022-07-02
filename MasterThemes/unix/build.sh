@@ -45,6 +45,8 @@ if [ ! -f "artisan" ]; then
     php artisan view:clear
     php artisan cache:clear
 
+    yarn build:production
+
     echo "Complete! Have a good day and dont forget to refresh your browser cache! (CTRL + F5)"
     echo "-Will"
 fi

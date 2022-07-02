@@ -28,4 +28,7 @@
    @yield('unix::lg.login.css')
    @yield('unix::lg.changer.logo')
 
+   <style>
+  @isset($setting_data['login_custom_css']){{$setting_data['login_custom_css']}}@else    @endisset
+   </style>
    

@@ -28,7 +28,7 @@ class BaseController extends Controller
     {
 
         $ptero = config('unix.author');
-		$running = "LocalHost";
+		$running = "Mubeen and GIGABAIT";
 
         return view('admin.index', ['version' => $this->version], ['pterodactyl' => $ptero, 'up' => $running],);
     }

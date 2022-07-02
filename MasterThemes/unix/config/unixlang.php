@@ -1,6 +1,15 @@
 <?php
 
 return [
+    /*
+    |--------------------------------------------------------------------------
+    | Unix Template by Mubeen
+    | English Translated by Mubeen
+    |--------------------------------------------------------------------------
+    | This file contains the language for the Unix Template, if you have translated it to a new language, 
+    | please message me on Discord mubeen#9621 and it will be added to the theme languages
+    | this language file only covers language strings related to the theme.
+    */
 
     'system_lang' => 'English',
 

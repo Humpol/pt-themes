@@ -107,7 +107,7 @@ body:before {
   border-right: 1px solid var(--border-color);
 }
 .sidebar.collapse .logo-expand, .sidebar.collapse .side-title {
-  display: none;
+  display: none !important;
 }
 .sidebar.collapse .logo {
   display: flex;

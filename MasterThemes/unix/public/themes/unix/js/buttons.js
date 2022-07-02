@@ -159,6 +159,11 @@ function openManage() {
     button.click('manage-server')
 }
 
-  function closeAlert() {
-      var button = document.getElementById("alert").style.display = "none";
-  }
+function logout() {
+    var button = document.getElementById("logout");
+    button.click('logout')
+}
+
+function closeAlert() {
+    var button = document.getElementById("alert").style.display = "none";
+}
